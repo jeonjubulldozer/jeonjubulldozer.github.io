@@ -186,8 +186,10 @@
   details.fold[open] summary::after { content: "−"; }
   details.fold .ind { margin-bottom: 8px; }
   details.fold > p { padding-bottom: 18px; }
-  .video { aspect-ratio: 16 / 9; width: 100%; border-radius: 8px; overflow: hidden; background: #000; margin-top: 28px; }
-  .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video { position: relative; display: block; aspect-ratio: 16 / 9; width: 100%; border-radius: 8px; overflow: hidden; background: #000; margin-top: 28px; }
+  .video img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .video .play { position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; border-radius: 50%; background: rgba(0,0,0,.6); border: 2px solid #fff; }
+  .video .play::after { content: ""; position: absolute; left: 29px; top: 21px; border-left: 22px solid #fff; border-top: 14px solid transparent; border-bottom: 14px solid transparent; }
   .book { display: flex; gap: 18px; align-items: flex-start; margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
   .book img { width: 96px; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.18); flex: none; }
   .book .t { font-family: var(--serif); font-weight: 700; font-size: 17px; line-height: 1.4; margin-bottom: 4px; }
@@ -238,8 +240,8 @@
     <p>판단력이 없어서가 아닙니다. 무엇을 어떤 순서로 봐야 하는지 배운 적이 없어서입니다.</p>
     <p>저도 그랬습니다. 투자하면서 시점별 수혜주를 따라가는 일은 지나고 나면 허무했습니다. 그렇다고 직장 생활을 하면서 수험용 회계처리를 외우고 싶은 것도 아니었습니다. 정리된 글을 읽을 때는 이해한 것 같아도, 실제 재무제표와 사업보고서를 혼자 펼치면 무엇부터 봐야 할지 몰랐고, 다음 기업에서는 다시 다른 사람의 해석을 찾아야 했습니다.</p>
     <p id="intro" class="muted" style="margin-top:26px">재무회계 강연을 어떤 생각으로 시작했고 실제로 어떻게 진행하는지, 소개 영상으로 먼저 보셔도 됩니다.</p>
-    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/IqvrMhUqNhA" title="재무회계 강연 소개 영상" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-    <p class="small muted" style="margin-top:8px">영상이 보이지 않으면 <a href="https://www.youtube.com/watch?v=IqvrMhUqNhA">유튜브에서 보기</a></p>
+    <a class="video" href="https://www.youtube.com/watch?v=IqvrMhUqNhA" aria-label="소개 영상 유튜브에서 보기"><img src="https://img.youtube.com/vi/IqvrMhUqNhA/hqdefault.jpg" alt="재무회계 강연 소개 영상" loading="lazy" referrerpolicy="no-referrer"><span class="play" aria-hidden="true"></span></a>
+    <p class="small muted" style="margin-top:8px"><a href="https://www.youtube.com/watch?v=IqvrMhUqNhA">유튜브에서 소개 영상 보기</a></p>
   </div>
 </section>
 
@@ -403,7 +405,7 @@
 <section>
   <div class="wrap">
     <h2>처음 오신 분은 여기서부터</h2>
-    <p>이번 달 강연 2시간과 오디오북 5시간이 한 달 분량입니다. 출퇴근길 하루 20분 분량입니다. 회계 기초는 2023년 첫 회차부터 몇 달치를 순서대로 같이 들으시면 되고, 회계 개념은 거기서 대부분 끝납니다.</p>
+    <p>한 달 분량은 강연 7시간입니다. 줌으로 하는 재무회계 강연 2시간과, 장표를 보며 듣는 오디오북 강연 5시간. 출퇴근길 하루 20분 분량입니다. 회계 기초는 2023년 첫 회차부터 몇 달치를 순서대로 같이 들으시면 되고, 회계 개념은 거기서 대부분 끝납니다.</p>
     <p>그 뒤의 4년치는 위의 터널 같은 이야기가 쌓인 것입니다. 하나씩 들을수록 눈앞에서 읽히는 산업이 늘어납니다.</p>
   </div>
 </section>
@@ -425,7 +427,7 @@
     <p class="month-name">마음 편한 투자를 위한 실전 재무회계 강연과 오디오북 (기초부터 체계적으로)</p>
     <div class="month">
       <h3>9월에는 무엇을 배우나요</h3>
-      <p class="small muted">9월 신규 콘텐츠는 재무회계 강연 1회와 월간 오디오북 5회입니다. 복잡한 항목을 나열하기보다, 기업이 번 돈을 어디에 쓰고 그 선택이 몇 년 뒤 사업을 어떻게 바꾸는지를 이해하는 데 초점을 맞춥니다.</p>
+      <p class="small muted">9월 신규 강연은 약 7시간입니다. 재무회계 강연 1회(약 2시간)와 장표로 진행하는 오디오북 강연 5회(약 5시간). 복잡한 항목을 나열하기보다, 기업이 번 돈을 어디에 쓰고 그 선택이 몇 년 뒤 사업을 어떻게 바꾸는지를 이해하는 데 초점을 맞춥니다.</p>
       <ul class="plain what">
         <li><b>재무회계 강연 — 지주회사와 자원배분의 역사</b> (약 2시간)<br><span class="small muted">오래 성장한 기업들이 어떤 사업을 키우고 어디에서 물러났는지, 벌어들인 돈을 재투자·인수·배당에 어떻게 배치했는지, 그 선택이 재무구조와 사업모델을 어떻게 바꿨는지 실제 역사와 재무자료로 따라갑니다.</span></li>
         <li><b>월간 오디오북 5회</b> (약 5시간)<br><span class="small muted">시대와 정책의 변화, 산업별 비즈니스 모델, 실물경제, 좋은 책과 인문학을 폭넓게 연결합니다. 기업 하나의 숫자를 넘어 그 기업이 놓인 환경과 변화의 방향을 함께 봅니다.</span></li>
@@ -447,7 +449,7 @@
           <h3>B. 9월 오디오북·강연 단품</h3>
           <div class="price">9만 9천 원<small>VAT 포함</small></div>
           <ul>
-            <li>오디오북 5회, 재무회계 강연 1회 — 총 약 7시간</li>
+            <li>강연 총 약 7시간 — 재무회계 강연 1회, 오디오북 강연 5회</li>
             <li>수강 기간 2026년 9월 1일~9월 30일</li>
             <li>전체 아카이브보다 이번 달 콘텐츠부터 경험하고 싶은 분을 위한 선택</li>
             <li>다음 달 강좌가 개설되고 연속 재수강을 이어가시는 경우 기존 콘텐츠 권한이 유지됩니다.</li>
@@ -507,7 +509,7 @@
     </details>
     <details>
       <summary>4년차인데 지금 들어가도 되나요?</summary>
-      <div class="a">됩니다. 한 달 분량은 강연 2시간과 오디오북 5시간이고, 회계 기초는 2023년 첫 몇 달치를 순서대로 같이 들으면 됩니다. 그 뒤로는 산업이 하나씩 늘어납니다. 같은 매출과 이익이 산업마다 왜 다르게 읽히는지를 사례로 넓혀 가는 과정입니다.</div>
+      <div class="a">됩니다. 한 달 분량은 강연 7시간(재무회계 강연 2시간, 오디오북 강연 5시간)이고, 회계 기초는 2023년 첫 몇 달치를 순서대로 같이 들으면 됩니다. 그 뒤로는 산업이 하나씩 늘어납니다. 같은 매출과 이익이 산업마다 왜 다르게 읽히는지를 사례로 넓혀 가는 과정입니다.</div>
     </details>
     <details>
       <summary>AI로 공부하면 안 되나요?</summary>
@@ -519,7 +521,7 @@
     </details>
     <details>
       <summary>한 달에 시간이 얼마나 필요한가요?</summary>
-      <div class="a">매달 새로 나오는 것은 오디오북 약 5시간과 강연 약 2시간입니다. 오디오북은 출퇴근이나 산책 중에 듣는 분이 많습니다. 아카이브는 2023년 첫 회차부터 순서대로 들으시면 되고, 정해진 진도는 없습니다.</div>
+      <div class="a">매달 새로 나오는 강연은 약 7시간입니다. 줌으로 하는 재무회계 강연 약 2시간과 장표로 진행하는 오디오북 강연 약 5시간. 오디오북은 출퇴근이나 산책 중에 듣는 분이 많습니다. 아카이브는 2023년 첫 회차부터 순서대로 들으시면 되고, 정해진 진도는 없습니다.</div>
     </details>
     <details>
       <summary>질문할 수 있나요?</summary>
@@ -539,7 +541,7 @@
     <p>본 아카이브의 각 기업 사례는 해당 콘텐츠가 제작될 당시 공개된 재무제표와 사업보고서, 산업·기술 환경을 바탕으로 설명합니다. 과거의 숫자를 현재에 그대로 적용하기 위한 자료가 아니라, 제작 당시의 사업활동이 재무제표에 어떻게 기록되고 연결되었는지를 이해하기 위한 회계 학습 자료입니다.</p>
     <div class="biz">
       <p>상호 부자원칙연구소 | 대표자 전민기 | 사업자등록번호 466-08-01729 | 통신판매업 신고 2021-서울성동-02442(성동구청)<br>서울시 성동구 무학봉길 35 | 010-8455-0128 | compoundingnumber@gmail.com</p>
-      <p>네이버 블로그 <a href="https://blog.naver.com/smilingmetheny">복리의 힘</a> | 유튜브 <a href="https://www.youtube.com/@전주불도저">오래 가는 힘</a></p>
+      <p>네이버 블로그 <a href="https://blog.naver.com/smilingmetheny">복리의 힘</a> | 유튜브 <a href="https://www.youtube.com/watch?v=IqvrMhUqNhA">오래 가는 힘</a></p>
     </div>
   </div>
 </footer>
