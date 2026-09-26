@@ -187,7 +187,11 @@
   details.fold .ind { margin-bottom: 8px; }
   details.fold > p { padding-bottom: 18px; }
   .video { position: relative; display: block; aspect-ratio: 16 / 9; width: 100%; border-radius: 8px; overflow: hidden; background: #000; margin-top: 28px; }
-  .video img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-card { position: absolute; inset: 0; background: linear-gradient(135deg, #1f4d2b 0%, #2c5f2d 55%, #1a3a21 100%); color: #fff; display: flex; flex-direction: column; justify-content: center; padding: 6% 8%; }
+.video-card-kicker { font-size: 13px; letter-spacing: .04em; color: #cfe3d3; margin-bottom: 10px; }
+.video-card-title { font-size: clamp(20px, 3.6vw, 34px); font-weight: 700; line-height: 1.25; }
+.video-card-sub { margin-top: 14px; font-size: 14px; color: #cfe3d3; }
   .video .play { position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; border-radius: 50%; background: rgba(0,0,0,.6); border: 2px solid #fff; }
   .video .play::after { content: ""; position: absolute; left: 29px; top: 21px; border-left: 22px solid #fff; border-top: 14px solid transparent; border-bottom: 14px solid transparent; }
   .book { display: flex; gap: 18px; align-items: flex-start; margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
@@ -240,7 +244,7 @@
     <p>판단력이 없어서가 아닙니다. 무엇을 어떤 순서로 봐야 하는지 배운 적이 없어서입니다.</p>
     <p>저도 그랬습니다. 투자하면서 시점별 수혜주를 따라가는 일은 지나고 나면 허무했습니다. 그렇다고 직장 생활을 하면서 수험용 회계처리를 외우고 싶은 것도 아니었습니다. 정리된 글을 읽을 때는 이해한 것 같아도, 실제 재무제표와 사업보고서를 혼자 펼치면 무엇부터 봐야 할지 몰랐고, 다음 기업에서는 다시 다른 사람의 해석을 찾아야 했습니다.</p>
     <p id="intro" class="muted" style="margin-top:26px">재무회계 강연을 어떤 생각으로 시작했고 실제로 어떻게 진행하는지, 소개 영상으로 먼저 보셔도 됩니다.</p>
-    <a class="video" href="https://www.youtube.com/watch?v=IqvrMhUqNhA" aria-label="소개 영상 유튜브에서 보기"><img src="https://img.youtube.com/vi/IqvrMhUqNhA/hqdefault.jpg" alt="재무회계 강연 소개 영상" loading="lazy" referrerpolicy="no-referrer"><span class="play" aria-hidden="true"></span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=IqvrMhUqNhA" aria-label="소개 영상 유튜브에서 보기"><div class="video-card"><div class="video-card-kicker">소개 영상 · 약 3분</div><div class="video-card-title">남의 해석에 기대지 않고<br>기업을 읽는 법</div><div class="video-card-sub">유튜브에서 보기</div></div><img src="https://i.ytimg.com/vi/IqvrMhUqNhA/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="play" aria-hidden="true"></span></a>
     <p class="small muted" style="margin-top:8px"><a href="https://www.youtube.com/watch?v=IqvrMhUqNhA">유튜브에서 소개 영상 보기</a></p>
   </div>
 </section>
@@ -446,7 +450,7 @@
             <li>강연이 없는 날에도 수시로 올라오는 글 — 그 주의 변화를 강연의 눈으로 읽기</li>
             <li>별도 리더십 채널 열람 — 집중력·실행력·몸의 루틴. 제가 실제로 지킨 운동 루틴과, AI로 직접 만들어 쓰는 루틴 앱 이야기</li>
             <li>열람 기간: 신청한 달부터 10개월. 2026년 10월 신청은 2026년 10월부터 2027년 7월까지. 기간 내 반복 열람</li>
-            <li>다음 달부터는 월 12만 5천 원(VAT 포함)으로 이어서 듣습니다. 매달 강연 8시간이 새로 나옵니다. 방법은 수강생께 따로 안내합니다.</li>
+            <li>다음 달부터는 월 12만 5천 원(VAT 포함)으로 이어서 듣습니다. 매달 강연 8시간이 새로 나옵니다. 지금 듣는 분들 대부분이 패키지가 끝난 뒤 이렇게 이어서 듣고 계십니다. 방법은 수강생께 따로 안내합니다.</li>
           </ul>
         </div>
       </div>
