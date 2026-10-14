@@ -1,0 +1,313 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex,nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>재무회계 강연·오디오북 전체 목차</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: phone-first single column. Search + jump bar stays on top; topic index first (cards whose month refs link to the month row), then years, then reading guide. Single light theme by request: white, black, one yellow for chips / thin lines / underlines. */
+:root{
+  --bg:#ffffff;
+  --ink:#000000;
+  --y:#ffd400;
+  --sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --bar-h:118px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bar-h) + 12px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere;-webkit-text-size-adjust:100%}
+a{color:var(--ink)}
+.wrap{max-width:760px;margin:0 auto;padding-inline:18px}
+
+/* Header */
+.top .wrap{padding-block:40px 22px}
+.org{margin:0;font-size:13px;font-weight:500;letter-spacing:.05em}
+h1{margin:12px 0 0;line-height:1.25;font-weight:900;text-wrap:balance}
+h1 .sub{display:block;font-size:18px;font-weight:700;margin-bottom:4px}
+h1 .main{font-size:34px;background:linear-gradient(transparent 64%,var(--y) 64%);padding-inline:2px}
+.lede{margin:12px 0 0;font-size:15px;font-weight:400;line-height:1.65}
+.lede + .lede{margin-top:4px}
+
+/* Sticky search bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-top:1px solid var(--y);border-bottom:1px solid var(--y)}
+.bar-in{padding-block:10px;display:grid;gap:8px}
+.search{position:relative}
+#q{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1.5px solid var(--ink);border-radius:10px;padding:10px 44px 10px 14px;-webkit-appearance:none;appearance:none}
+#q::placeholder{color:var(--ink);opacity:.45}
+#q::-webkit-search-cancel-button{display:none}
+#q:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px var(--y)}
+#qx{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:34px;height:34px;border:0;background:var(--bg);color:var(--ink);font-size:22px;line-height:1;border-radius:50%;cursor:pointer}
+#qx:focus-visible{outline:2px solid var(--y)}
+.jump{display:flex;flex-wrap:wrap;gap:6px}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;text-decoration:none;font-size:13.5px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--y);white-space:nowrap}
+.jump a:first-child{background:var(--y)}
+.jump a:hover,.jump a:focus-visible{background:var(--y);outline:none}
+
+main{padding-bottom:64px}
+.block{padding-top:40px}
+.intro{margin:10px 0 0;font-size:15px;max-width:44em}
+.sec{margin:0;font-size:22px;font-weight:900;line-height:1.35}
+.sec span,.yr span{background:linear-gradient(transparent 64%,var(--y) 64%);padding-inline:2px}
+
+/* Topic index */
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cats a{text-decoration:none;font-size:14px;font-weight:500;line-height:1.3;padding:7px 12px;border-radius:999px;border:1px solid var(--y)}
+.cats a:hover,.cats a:focus-visible{background:var(--y);outline:none}
+.fgrid{display:grid;gap:12px;margin-top:20px}
+.f{border:1px solid var(--y);border-radius:12px;padding:16px 16px 14px;min-width:0}
+.f h3{margin:0 0 6px;font-size:16px;font-weight:700;line-height:1.45}
+.f p{margin:0;font-size:15px;line-height:1.8}
+a.ref{font-weight:500;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:3px;text-underline-offset:3px;font-variant-numeric:tabular-nums;white-space:nowrap}
+a.ref:hover,a.ref:focus-visible{background:var(--y);outline:none}
+@media (min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
+
+/* Years */
+.year{padding-top:48px}
+.yr{margin:0;font-size:30px;font-weight:900;line-height:1.2;font-variant-numeric:tabular-nums}
+.months{margin-top:18px;border-top:2px solid var(--y)}
+.m{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:4px 14px;padding:18px 0;border-bottom:1px solid var(--y);transition:box-shadow .2s}
+.m:target{box-shadow:inset 4px 0 0 var(--y);padding-left:14px}
+.m > h3{margin:0;font-size:18px;font-weight:900;line-height:1.55;white-space:nowrap}
+.lines{display:grid;gap:14px;min-width:0}
+.ln{margin:0;font-size:15px;line-height:1.75}
+.chip{display:inline-block;background:var(--y);color:var(--ink);font-size:12px;font-weight:700;line-height:1;padding:5px 8px 4px;border-radius:4px;margin-right:6px;vertical-align:2px}
+.meta{font-weight:400;font-variant-numeric:tabular-nums;margin-right:6px}
+.meta::after{content:"";display:inline-block;width:1px;height:.9em;background:var(--y);margin-left:8px;vertical-align:-1px}
+.dates{display:block;margin-top:6px;padding-top:6px;border-top:1px dashed var(--y);font-size:13px;font-variant-numeric:tabular-nums;letter-spacing:.01em;line-height:1.6}
+
+/* Search highlight */
+mark{background:none;color:inherit;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:.5em;text-decoration-skip-ink:none;text-underline-offset:-.3em}
+body.searching .intro,body.searching .cats,body.searching .guide{display:none}
+.empty{margin:40px 0 0;font-size:15px}
+
+/* Guide + footer */
+.guide ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.guide li{padding-left:14px;border-left:2px solid var(--y);font-size:14px;line-height:1.75}
+.note{margin-top:36px;padding-top:16px;border-top:2px solid var(--y);font-size:14px;line-height:1.75}
+.note p{margin:0}
+
+@media (min-width:640px){
+  h1 .main{font-size:42px}
+  .m{grid-template-columns:4.2em minmax(0,1fr)}
+}
+
+</style>
+<header class="top"><div class="wrap">
+<p class="org">보통 사람 부자 연구소 · 전주불도저</p>
+<h1><span class="sub">재무회계 강연 · 오디오북</span><span class="main">전체 목차</span></h1>
+<p class="lede">2023년 1월부터 2026년 10월까지, 달마다 무엇을 다뤘는지 한눈에 찾아보는 안내서</p>
+<p class="lede">2023년부터 쌓인 강연과 오디오북, 총 400시간 이상입니다.</p>
+</div></header>
+<div class="bar"><div class="wrap bar-in">
+<div class="search"><input id="q" type="search" placeholder="보험, 듀레이션, 24.10 …" aria-label="검색" autocomplete="off" enterkeyhint="search"><button id="qx" type="button" aria-label="지우기" hidden>×</button></div>
+<nav class="jump" aria-label="바로가기"><a href="#find">산업·주제별 찾아보기</a><a href="#y2023">2023</a><a href="#y2024">2024</a><a href="#y2025">2025</a><a href="#y2026">2026</a></nav>
+</div></div>
+<main class="wrap">
+<section class="block find" id="find">
+<h2 class="sec"><span>산업·주제별 찾아보기</span></h2>
+<p class="intro">월별 목차와 같은 내용을 산업·사업 특성 기준으로 다시 묶었습니다. 괄호는 다룬 달입니다.</p>
+<nav class="cats" aria-label="산업·주제별 찾아보기"><a href="#c1">금융업(상업은행·보험·디지털 금융)</a><a href="#c2">보험업(생명·손해·중개)</a><a href="#c3">대체자산 운용업·투자회사형 지주사</a><a href="#c4">반도체</a><a href="#c5">가전</a><a href="#c6">명품·브랜드</a><a href="#c7">정기 방문·반복매출 서비스</a><a href="#c8">외식·프랜차이즈·유통</a><a href="#c9">호텔·레저·콘텐츠</a><a href="#c10">소프트웨어·정보 구독 서비스</a><a href="#c11">산업재·에너지·소재</a><a href="#c12">부동산·공간 임대</a><a href="#c13">숫자 읽기 기초</a></nav>
+<div class="fgrid">
+<article class="f" id="c1"><h3>금융업(상업은행·보험·디지털 금융)</h3><p>상업은행업 특성과 금리 재설정(<a class="ref" href="#m2024-10">24.10</a>, <a class="ref" href="#m2024-11">24.11</a>), 금리 인상·인하가 자산·부채에 미치는 영향과 듀레이션(<a class="ref" href="#m2024-10">24.10</a>, <a class="ref" href="#m2024-12">24.12</a>, <a class="ref" href="#m2025-08">25.8</a>, <a class="ref" href="#m2025-12">25.12</a>), 카드·대출 중심 디지털 금융(<a class="ref" href="#m2024-08">24.9</a>), 은행·보험사 듀레이션(<a class="ref" href="#m2026-02">26.2</a> 오디오북)</p></article>
+<article class="f" id="c2"><h3>보험업(생명·손해·중개)</h3><p>보험 플로트와 부채의 회계(<a class="ref" href="#m2023-02">23.2</a>), 자동차 손해보험 직판(<a class="ref" href="#m2024-03">24.3</a>), 보험 중개(<a class="ref" href="#m2024-05">24.5</a>), 생명보험 vs 손해보험 — 금리 변동과 듀레이션 매칭(<a class="ref" href="#m2024-12">24.12</a>, <a class="ref" href="#m2025-12">25.12</a>), 보험 브로커·캣본드(<a class="ref" href="#m2025-12">25.12</a>), 재보험·퇴직연금 제도(<a class="ref" href="#m2026-01">26.1</a>)</p></article>
+<article class="f" id="c3"><h3>대체자산 운용업·투자회사형 지주사</h3><p>사모주식·크레딧·부동산 운용사(<a class="ref" href="#m2024-01">24.1</a>), 크레딧·바이아웃 구조(<a class="ref" href="#m2024-10">24.10</a>), 운용사별 자원배분 방식(<a class="ref" href="#m2024-11">24.11</a>), 지분 투자 회계와 110년 자원배분(<a class="ref" href="#m2026-03">26.3</a>, <a class="ref" href="#m2026-09">26.9</a>), 지주회사 소유 구조 비교(<a class="ref" href="#m2023-05">23.5</a>, 오디오북)</p></article>
+<article class="f" id="c4"><h3>반도체</h3><p>반도체 칩(팹리스) — 매출채권과 재고자산으로 보는 업황(<a class="ref" href="#m2025-10">25.11</a>), 설계 전문과 직접 생산의 자본 집약도 비교(<a class="ref" href="#m2025-09">25.9</a>), 반도체 장비(측정·노광) 산업(<a class="ref" href="#m2023-04">23.4</a>, <a class="ref" href="#m2023-06">23.6</a>, <a class="ref" href="#m2024-05">24.6</a>)</p></article>
+<article class="f" id="c5"><h3>가전</h3><p>일반 가전 제조업과 주방설비 전문 기업의 이익률 비교, 내구재 수요(<a class="ref" href="#m2024-07">24.7</a>)</p></article>
+<article class="f" id="c6"><h3>명품·브랜드</h3><p>명품 산업의 위계(<a class="ref" href="#m2023-03">23.3</a>), 요트 산업(<a class="ref" href="#m2024-03">24.3~4</a>), 명품 산업 판관비 구조(<a class="ref" href="#m2024-12">24.12</a>), 명품 자동차의 사업모델·이익률·CMD(<a class="ref" href="#m2025-02">25.2~3</a>, <a class="ref" href="#m2025-10">25.10</a>), 명품 패션 도매 채널(<a class="ref" href="#m2025-03">25.3</a>)</p></article>
+<article class="f" id="c7"><h3>정기 방문·반복매출 서비스</h3><p>유니폼 대여·세탁 서비스 총이익률과 배송 동선(<a class="ref" href="#m2024-08">24.8</a>), 유니폼 대여·폐기물 수거·해충 방제의 고정비 구조(<a class="ref" href="#m2025-08">25.8</a>), 해충 방제업(<a class="ref" href="#m2025-09">25.9</a>), 방제 업계 통합(<a class="ref" href="#m2025-10">25.10</a>)</p></article>
+<article class="f" id="c8"><h3>외식·프랜차이즈·유통</h3><p>창고형 회원제 유통·편의점(<a class="ref" href="#m2024-02">24.2</a>), 식당 직영과 가맹 구조(<a class="ref" href="#m2025-04">25.4</a>), 외식 프랜차이즈 동일매장 성장률(<a class="ref" href="#m2025-05">25.5</a>)</p></article>
+<article class="f" id="c9"><h3>호텔·레저·콘텐츠</h3><p>호텔업 특성(<a class="ref" href="#m2024-02">24.2</a>, <a class="ref" href="#m2024-05">24.5</a>, <a class="ref" href="#m2025-07">25.7</a>), 스트리밍·격투 스포츠 콘텐츠(<a class="ref" href="#m2025-02">25.2</a>, <a class="ref" href="#m2025-07">25.7</a> 오디오북)</p></article>
+<article class="f" id="c10"><h3>소프트웨어·정보 구독 서비스</h3><p>소프트웨어 전환비용(<a class="ref" href="#m2024-02">24.2</a>), 금융·세무 소프트웨어(<a class="ref" href="#m2024-03">24.3</a>), 출판에서 전문 정보 구독 서비스로의 전환(<a class="ref" href="#m2024-12">24.12</a>)</p></article>
+<article class="f" id="c11"><h3>산업재·에너지·소재</h3><p>철도·정부 컨설팅·자동차 부품 소매(<a class="ref" href="#m2023-04">23.4</a>), 산업가스 온사이트(<a class="ref" href="#m2024-05">24.5</a>), 주방설비 애프터마켓(<a class="ref" href="#m2024-07">24.7</a>), 로열티 사업과 에너지(<a class="ref" href="#m2025-01">25.1</a>), 산업재 유통·니치 항공 부품(<a class="ref" href="#m2025-03">25.3</a>, <a class="ref" href="#m2025-07">25.7</a>)</p></article>
+<article class="f" id="c12"><h3>부동산·공간 임대</h3><p>셀프 스토리지 사업 모델과 투자부동산 회계(<a class="ref" href="#m2023-10">23.10</a>), 유형자산·재고자산·투자부동산의 차이(<a class="ref" href="#m2024-08">24.8</a>)</p></article>
+<article class="f" id="c13"><h3>숫자 읽기 기초</h3><p>재무제표 세 가지 표(<a class="ref" href="#m2023-01">23.1~4</a>), PER×EPS·ROE·ROIC(<a class="ref" href="#m2023-02">23.2</a>, <a class="ref" href="#m2023-06">23.6</a>), 현금흐름(<a class="ref" href="#m2023-03">23.3</a>), 리스·사용권자산(<a class="ref" href="#m2025-07">25.7</a>), 지분 투자 회계(<a class="ref" href="#m2026-03">26.3</a>)</p></article>
+</div>
+</section>
+<section class="block year" id="y2023">
+<h2 class="yr"><span>2023년</span></h2>
+<p class="intro">재무제표 세 가지 표를 읽는 기초에서 시작했습니다(1~4월). 5월부터는 같은 숫자도 사업모델에 따라 다르게 읽는 법으로 넘어갔습니다. 숫자의 일관성, PER×EPS, ROE·ROIC, 현금흐름, 경쟁 구조, 경영진 읽기가 한 해 내내 반복된 설명의 축입니다.</p>
+<div class="months">
+<div class="m" id="m2023-01"><h3>1월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>재무제표 세 가지 표 읽기 기초 — 증감률과 10년 숫자의 일관성, 무형자산, 영업·잉여현금흐름<span class="dates">23.1.5 / 23.1.12 / 23.1.19 / 23.1.26</span></p></div></div>
+<div class="m" id="m2023-02"><h3>2월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>주가 = PER × EPS의 구성, 보험업의 플로트와 부채의 회계(보험 산업 특성), 업종별 원가·판관비 구조, 이익이 주주 몫으로 이어지는 경로<span class="dates">23.2.2 / 23.2.9 / 23.2.16 / 23.2.23</span></p>
+      <p class="ln"><span class="chip">오디오북</span>경제신문 기사를 읽는 법과 기업을 설명하는 기본 용어를 익힌 첫 달</p>
+      <p class="ln"><span class="chip">도서</span>『경제적 해자』(팻 도시), 『위대한 기업에 투자하라』(필립 피셔)</p></div></div>
+<div class="m" id="m2023-03"><h3>3월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>이익과 현금흐름 — 운전자본·감가상각·CAPEX, 숫자 뒤의 사업 전략과 메가트렌드<span class="dates">23.3.9 / 23.3.15 / 23.3.23 / 23.3.30</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『독점의 기술』과 명품 브랜드 사례로 보는 독점적 사업의 구조와 브랜드 위계</p>
+      <p class="ln"><span class="chip">도서</span>『독점의 기술』</p></div></div>
+<div class="m" id="m2023-04"><h3>4월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>경영진·단일 사업 같은 정성 요인, 매출 성장과 반복 매출의 회계, 철도·정부 컨설팅·자동차 부품 소매(애프터마켓) 산업의 사업 특성, 반도체 장비(측정 장비) 산업 특성(23.4.20)<span class="dates">23.4.6 / 23.4.13 / 23.4.20 / 23.4.27</span></p>
+      <p class="ln"><span class="chip">오디오북</span>자동차 부품 소매·광산 장비·화물 포워딩처럼 뒷단에서 매출이 나는 사업 구조 알아보기</p>
+      <p class="ln"><span class="chip">도서</span>『다이브딥』, 『뜨거운 노래는 땅에 묻는다』(최평규), 『직업의 지리학』</p></div></div>
+<div class="m" id="m2023-05"><h3>5월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>사업모델마다 숫자를 다르게 읽기 — 업력·정체성, PER 수준이 달라지는 맥락<span class="dates">23.5.4 / 23.5.11 / 23.5.18 / 23.6.1</span></p>
+      <p class="ln"><span class="chip">오디오북</span>투자회사형 지주회사의 소유 구조 비교</p>
+      <p class="ln"><span class="chip">도서</span>『포춘으로 읽는 워런 버핏의 투자 철학』(캐럴 루미스), 『카라마조프가의 형제들』(도스토옙스키)</p></div></div>
+<div class="m" id="m2023-06"><h3>6월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>PER 변화의 구성 요소, 주주수익률 분해, ROIC와 조달비용, 지배구조와 이해관계 읽기, 반도체 장비(노광·측정 장비) 산업 특성(23.6.15)<span class="dates">23.6.8 / 23.6.15 / 23.6.22 / 23.6.29</span></p>
+      <p class="ln"><span class="chip">오디오북</span>일상에서 만나는 기업의 사업모델을 설명해 보는 훈련</p>
+      <p class="ln"><span class="chip">도서</span>『100배 주식』(크리스토퍼 메이어), 『영원한 수업』, 『카라마조프가의 형제들』(도스토옙스키), 『불행 피하기 기술』(롤프 도벨리), 『생각하라 그리고 부자가 되어라』(나폴레온 힐)</p></div></div>
+<div class="m" id="m2023-07"><h3>7월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">5회</span>재무제표는 작성이 아니라 해석 — 현금흐름표로 자원배분 읽기, 창고형 회원제 유통·자동차 부품 소매·대형 할인점 산업 특성<span class="dates">23.7.6 / 23.7.7 / 23.7.13 / 23.7.20 / 23.7.27</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『돈의 공식』, 뉴스·SNS 줄이기, 명품과 사모펀드(대체자산 운용) 산업의 사업모델 설명</p>
+      <p class="ln"><span class="chip">도서</span>『뉴스 다이어트』(롤프 도벨리), 『단도 투자』(모니시 파브라이), 『돈의 공식』(윌리엄 그린)</p></div></div>
+<div class="m" id="m2023-08"><h3>8월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>성장성과 수익성 지표, 사업 초점과 다각화·인수합병의 회계, 메가트렌드와 인구 통계<span class="dates">23.8.9 / 23.8.17 / 23.8.24 / 23.8.31</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『데미안』과 『미국 자본주의의 역사』 소개, 창업자와 경영진의 역할</p>
+      <p class="ln"><span class="chip">도서</span>『데미안』(헤르만 헤세), 『주식회사 이야기』(이주일), 『미국 자본주의의 역사』(앨런 그린스펀), 『아메리칸 비즈니스』</p></div></div>
+<div class="m" id="m2023-09"><h3>9월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>총이익률·R&amp;D·판관비로 본 경쟁 구조, EPS와 BPS, 지주사의 총주주수익률 계산법<span class="dates">23.9.7 / 23.9.14 / 23.9.21 / 23.9.27</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『죽음의 수용소에서』와 스웨덴 투자회사형 지주사 소개, 책 고르는 법</p>
+      <p class="ln"><span class="chip">도서</span>『투자도, 인생도, 복리처럼』, 『사고 싶게 만드는 것들』(폴린 브라운), 『세상을 움직이는 사모펀드 이야기』, 『죽음의 수용소에서』(빅터 프랭클), 『돈의 심리학』(모건 하우절), 『나쁜 펀드매니저와 거래하라』</p></div></div>
+<div class="m" id="m2023-10"><h3>10월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>가정값과 민감도, 셀프 스토리지 사업 모델과 투자부동산 회계(23.10.12), 경영진의 자원배분 읽기<span class="dates">23.10.5 / 23.10.12 / 23.10.19 / 23.10.26</span></p>
+      <p class="ln"><span class="chip">오디오북</span>일의 소명, 지주회사의 회계 구조, 돈을 내고 만드는 강제 루틴</p>
+      <p class="ln"><span class="chip">도서</span>『하트 오브 비즈니스』(휴버트 졸리), 『죽음의 수용소에서』(빅터 프랭클), 『숨결이 바람 될 때』(폴 칼라니티), 『투자도, 인생도, 복리처럼』, 『모닝스타 성공투자 5원칙』(팻 도시), 『돈은 빅테크로 흐른다』(애덤 시셀)</p></div></div>
+<div class="m" id="m2023-11"><h3>11월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>주가가 움직인 이유를 실적 변화와 멀티플 변화로 나눠 이해하기, 이익 일관성과 밸류에이션의 개념, 스포츠 브랜드, 작은 시장의 사업 구조<span class="dates">23.11.9 / 23.11.16 / 23.11.23 / 23.12.7</span></p>
+      <p class="ln"><span class="chip">오디오북</span>느리게 나이 드는 습관과 허리 건강, 연쇄 인수 모델의 구조</p>
+      <p class="ln"><span class="chip">도서</span>『당신도 느리게 나이 들 수 있습니다』(정희원), 『어떤 죽음이 삶에게 말했다』, 『히어로 코드』, 『제대로 걸으면 아프지 않습니다』(송영민), 『아주 작은 습관의 힘』, 『백년허리』(정선근), 『달리기의 모든 것』(남혁우), 『KKR 스토리』</p></div></div>
+</div>
+</section>
+<section class="block year" id="y2024">
+<h2 class="yr"><span>2024년</span></h2>
+<p class="intro">경영진의 자원배분을 중심에 두고 산업별 사례로 숫자를 해석하는 방법을 다룬 해입니다. 대체자산 운용업, 호텔업, 요트 산업, 항공 부품, 산업가스, 주방설비, 명품 산업의 사업모델에 더해, 상업은행업과 생명·손해보험업의 금리·듀레이션 구조를 설명했습니다.</p>
+<div class="months">
+<div class="m" id="m2024-01"><h3>1월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>대체자산 운용업(사모주식·크레딧·부동산)의 사업모델 비교, 자원배분과 주당 장부가치, 영업현금흐름<span class="dates">24.1.4 / 24.1.11 / 24.1.18 / 24.1.25</span></p>
+      <p class="ln"><span class="chip">오디오북</span>한 달 쉬고 돌아와 일상 사례로 보는 기업의 사업모델</p>
+      <p class="ln"><span class="chip">도서</span>『포춘으로 읽는 워런 버핏의 투자 철학』(캐럴 루미스), 『돈의 속성』(김승호), 『성격 급한 부자들』(다구치 도모타카)</p></div></div>
+<div class="m" id="m2024-02"><h3>2월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>성장성·수익성·균질성, 소프트웨어 산업의 전환비용, 유통업(창고형 회원제·편의점) 특성, 호텔업 특성<span class="dates">24.2.1 / 24.2.7 / 24.2.15 / 24.2.22</span></p>
+      <p class="ln"><span class="chip">오디오북</span>창업자 책과 밸류업 사례 소개, 여행길에서 만난 기업, 위험을 이해하는 기본 개념</p>
+      <p class="ln"><span class="chip">도서</span>『세상은 나의 보물섬이다』(김웅기), 『세계는 넓고 할 일은 많다』(김우중), 『명품 우량주로 승부하라』, 『히트 리프레시』(사티아 나델라), 『투자은행의 눈으로 보라』(김지훈), 『스노볼』, 『지혜롭게 투자한다는 것』(찰스 엘리스), 『5126번의 실패에서 배운 삶』(제임스 다이슨)</p></div></div>
+<div class="m" id="m2024-03"><h3>3월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>매출을 키우는 세 가지 방식(CAPEX·롤업·애드온), 요트 산업, 금융·세무 소프트웨어, 자동차 손해보험(직판) 사업모델, 콘퍼런스콜 읽는 법<span class="dates">24.3.7 / 24.3.14 / 24.3.21 / 24.3.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『스노볼』과 드러켄밀러 소개, 명품 자동차 산업과 보험 플로트의 구조</p>
+      <p class="ln"><span class="chip">도서</span>『스노볼』, 『기술주 투자 절대원칙』(마크 마하니), 『발명과 방황』(제프 베조스), 『랜덤워크 투자수업』(버턴 말킬), 『100년 투자가문의 비밀』(존 로스차일드), 『도시의 승리』, 『직업의 지리학』</p></div></div>
+<div class="m" id="m2024-04"><h3>4월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">5회</span>피어 그룹 비교(요트 산업), 사업 초점, 여러 가치평가 방식의 개념, 중고차 경매 플랫폼, 니치 시장의 항공 부품 제조·애프터마켓<span class="dates">24.4.4 / 24.4.11 / 24.4.18 / 24.4.25</span></p>
+      <p class="ln"><span class="chip">오디오북</span>자원배분의 관점으로 본 삶, 소프와 멍거의 확률 사고, 건강 책 읽기</p>
+      <p class="ln"><span class="chip">도서</span>『하버드 인생학 특강』(클레이튼 크리스텐슨), 『100년 투자가문의 비밀』(존 로스차일드), 『누구도 나를 파괴할 수 없다』(데이비드 고긴스), 『환자 혁명』(조항경), 『사모투자펀드』(이원히임(들리는 대로)), 『바이오투자의 정석』, 『내 몸이 최고의 의사다』(임동규), 『완벽한 자유와 부를 만드는 인생 투자』(우석), 『조금씩 천천히 자연식물식』, 『딜 메이커처럼 투자하라』(크리스 메이어)</p></div></div>
+<div class="m" id="m2024-05"><h3>5·6월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>연관 기업을 떠올려 함께 읽는 법 — 이익률·ROE 한 가지로 판단하지 않고 독점력·잉여현금·주주수익을 함께 보기(24.5.15), 사업모델의 난이도와 피어 그룹 넓게 잡기(24.5.29), 영업권 회계, 산업가스(온사이트 공급) 산업 특성, 보험 중개업, 호텔업의 자원배분 방식, 반도체 장비(측정·노광) 발주와 업황의 관계(24.6.12)<span class="dates">24.5.15 / 24.5.29 / 24.6.12 / 24.6.26</span></p>
+      <p class="ln"><span class="chip">오디오북</span>멍거의 삶과 버핏의 유연함, 감사 습관과 대가들의 오답노트 소개(5·6월)</p>
+      <p class="ln"><span class="chip">도서</span>『찰리 멍거, 자네가 옳아』(제니 로우), 『집중 투자의 정석』, 『내부자가 알려주는 실전 밸류에이션 테크닉』, 『발명과 방황』(제프 베조스), 『소년과 두더지와 여우와 말』(찰리 매커시), 『만일 내가 인생을 다시 산다면』(김혜남), 『가만히 혼자 웃고 싶은 오후』(장석주), 『투자 대가들의 위대한 오답노트』, 『천 원을 경영하라』(박정부, 다이소 창업자)</p></div></div>
+<div class="m" id="m2024-07"><h3>7월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">5회</span>상업용 주방설비(오븐) 애프터마켓과 총소유비용, 가전 산업 특성 — 일반 가전 제조업과 주방설비 전문 기업의 이익률 비교, 평생 쓰는 내구재 수요(24.7.12), 메가트렌드와 산업 구조, 부채의 구성, 장례업과 영업권<span class="dates">24.7.4 / 24.7.12 / 24.7.18 / 24.7.26</span></p>
+      <p class="ln"><span class="chip">오디오북</span>폭염에서 출발한 산업 이야기, 창고형 유통·유니폼 서비스의 사업 구조, 책으로 하는 공부</p>
+      <p class="ln"><span class="chip">도서</span>『도파민 네이션』(애나 렘키), 『노마드 투자서한』(닉 슬립), 『이웃집 백만장자』, 『죽기 전에 꼭 들어야 할 클래식 1001』, 『폭염 살인』(제프 구델), 『초과 수익 바이블』(흘리 반 하버비크), 『넥스트 레벨』, 『심플하게 산다』, 『어떻게 투자할 것인가』(데이비드 루벤스타인), 『멀티 제너레이션, 대전환의 시작』, 『투자하는 마음』, 『내일의 스타벅스를 찾아라』(마이클 모라), 『템플턴 플랜』(존 템플턴), 『월마트, 두려움 없는 도전』(샘 월튼), 『사업을 한다는 것』(레이 크록)</p></div></div>
+<div class="m" id="m2024-08"><h3>8월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>유니폼 렌털의 총이익률(촘촘한 배송 동선과 규모의 경제, 24.8.8), 유니폼 렌털의 원가 구조(운전기사 임금·연료비가 매출원가)와 유형자산·재고자산·투자부동산의 차이(24.8.16, 셀프 스토리지 복습), 영업권과 손상차손(24.9.6), 카드·대출 중심 디지털 금융업의 사업 특성(24.9.6)<span class="dates">24.8.8 / 24.8.16 / 24.9.6 / 24.9.25</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『픽사, 위대한 도약』과 퍼펙트 데이즈 소개, 일상에서 만난 기업 이야기</p>
+      <p class="ln"><span class="chip">도서</span>『그렇게 붕괴가 시작되었다』, 『더 좋은 주식의 발견』, 『마음 가는 대로 해라』, 『영혼을 위한 닭고기 수프』, 『안나 카레니나』(톨스토이), 『빈 살만의 두 얼굴』, 『회계 공부는 난생 처음입니다만』(김범석), 『불멸의 지휘자』(안동림), 『픽사, 위대한 도약』(로렌스 레비), 『투자은행의 눈으로 보라』(김지훈), 『페스트』(알베르 카뮈)</p></div></div>
+<div class="m" id="m2024-09"><h3>9월</h3><div class="lines"><p class="ln"><span class="chip">오디오북</span>과학관에서 본 기업들, 『안나 카레니나』와 불안을 다루는 책 소개</p>
+      <p class="ln"><span class="chip">도서</span>『안나 카레니나』(톨스토이), 『행복의 조건』(조지 베일런트), 『자신 있게 살아라』, 『강박에 빠진 뇌』(제프리 슈워츠), 『나는 포기를 모른다』(아놀드 슈워제네거), 『사업을 한다는 것』(레이 크록)</p></div></div>
+<div class="m" id="m2024-10"><h3>10월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">5회</span>비용으로 처리되는 지출(마케팅·R&amp;D)의 회계, 대체자산 운용업(크레딧·바이아웃) 구조, 상업은행업 특성(대출·예금 금리 재설정, 금리 상승기 순이자 구조), 듀레이션 개념(24.10.17 1·2부)<span class="dates">24.10.4 / 24.10.11 / 24.10.17 / 24.10.25</span></p>
+      <p class="ln"><span class="chip">오디오북</span>주짓수·기타·재즈 같은 취향, 버핏 전기와 회계 읽는 법</p>
+      <p class="ln"><span class="chip">도서</span>『솔로 워커』, 『불변의 법칙』(모건 하우절), 『위대한 자본가의 탄생, 워런 버핏』(로저 로웬스타인), 『ECM 50 음악 속으로』, 『회계와 재무의 정석』(조경현), 『길 위의 뇌』(정선재)</p></div></div>
+<div class="m" id="m2024-11"><h3>11월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>운용사마다 다른 자원배분 방식, 상업은행의 채권 평가와 금리 인상, PBR이 왜곡되는 경우, 이익률 해석<span class="dates">24.11.8 / 24.11.14 / 24.11.22 / 24.11.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>사전에 정해 두는 원칙의 개념 여덟 가지와 기업 사례를 넓게 보는 법</p>
+      <p class="ln"><span class="chip">도서</span>『Made from Scratch(켄 테일러 자서전)』, 『힐빌리의 노래』(J.D. 밴스), 『100배 주식』(크리스토퍼 메이어), 『경제적 해자』(팻 도시)</p></div></div>
+<div class="m" id="m2024-12"><h3>12월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">5회</span>생명보험·손해보험 산업 특성, 금리 변동과 자산·부채 듀레이션 매칭(재투자·역마진·자본건전성), 명품 산업의 판관비 구조, 출판에서 디지털 정보 구독 서비스(세무·회계·헬스케어 정보)로 전환한 산업 — 구독 반복매출 80% 이상, 영업 레버리지, 소규모 인수(24.12.26), 성장이 정체된 산업에서 영업 레버리지·소규모 인수·주주환원으로 가치를 키우는 방식(24.12.26)<span class="dates">24.12.6 / 24.12.13 / 24.12.19 / 24.12.26</span></p>
+      <p class="ln"><span class="chip">오디오북</span>계엄 직후의 환율 이야기, 찰스 핸디의 책과 긴 시간 지평</p>
+      <p class="ln"><span class="chip">도서</span>『보통장군』(전인범), 『빈센트 반 고흐, 영혼의 그림과 편지들』, 『이중섭 편지와 그림들』, 『삶이 던지는 질문은 언제나 같다』(찰스 핸디), 『코끼리와 벼룩』(찰스 핸디), 『내가 산다는 것은』(박상일), 『직업으로서의 소설가』(무라카미 하루키), 『이렇게 작지만 확실한 행복』(무라카미 하루키)</p></div></div>
+</div>
+</section>
+<section class="block year" id="y2025">
+<h2 class="yr"><span>2025년</span></h2>
+<p class="intro">업종 하나를 몇 주씩 깊게 판 해입니다. 에너지 로열티, 명품 자동차, 식당 직영·가맹, 리스, 정기 방문 서비스(유니폼 대여·폐기물 수거·해충 방제), 설계 전문 반도체 칩(팹리스), 생명·손해보험, 보험 브로커로 이어졌습니다.</p>
+<div class="months">
+<div class="m" id="m2025-01"><h3>1월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">2회</span>로열티 사업(토지·자원 권리)과 에너지 산업, 고정비·변동비 구조<span class="dates">25.1.16 / 25.1.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>금리와 미국 정책 변화 소개, 명품과 사모펀드의 구조</p></div></div>
+<div class="m" id="m2025-02"><h3>2월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>소프트웨어 기업의 인수합병 가속과 ROIC(무형자산이 늘면 ROIC가 일시 압박), 이익률 낮은 신사업(수처리)이 전체 이익률을 희석해도 이익이 느는지 보기, 숫자로 사업을 읽는 나만의 점검표 만들기, 명품 자동차 사업모델<span class="dates">25.2.6 / 25.2.13 / 25.2.20 / 25.2.27</span></p>
+      <p class="ln"><span class="chip">오디오북</span>『기업의 세계사』, 명품 자동차·음원 스트리밍·완성차 사업모델 비교</p>
+      <p class="ln"><span class="chip">도서</span>『기업의 세계사』, 『바람을 보는 투자』(피터 오펜하이머), 『찰스 슈왑 투자불변의 법칙』, 『Made from Scratch(켄 테일러 자서전)』, 『모든 것이 전쟁이다』(다나 마티올리), 『투자의 전설, 앤서니 볼턴』</p></div></div>
+<div class="m" id="m2025-03"><h3>3월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>명품 자동차 이익률 구조, 명품 패션의 도매 채널, 화물 포워딩·산업재 유통의 ROIC 계산<span class="dates">25.3.7 / 25.3.14 / 25.3.21 / 25.3.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>상조·보험 구조, 자동차 부품 소매와 산업용 소모품 유통의 사업 구조, 운동 루틴</p></div></div>
+<div class="m" id="m2025-04"><h3>4월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>주당 숫자로 다시 보기(엔지니어링 컨설팅), 조달 구조와 실질 수익률 계산, 식당 직영과 가맹 구조<span class="dates">25.4.3 / 25.4.11 / 25.4.18 / 25.4.24</span></p>
+      <p class="ln"><span class="chip">오디오북</span>조지 포먼과 조니 킴의 삶 소개, 관세가 기업에 미치는 영향과 분산의 개념</p></div></div>
+<div class="m" id="m2025-05"><h3>5·6월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>외식 프랜차이즈의 사업모델, 오가닉 성장과 동일매장 성장률, 가격 구조<span class="dates">25.5.23 / 25.5.29 / 25.6.12 / 25.6.25</span></p>
+      <p class="ln"><span class="chip">오디오북</span>프랜차이즈·공조·항공 부품 사업모델과 서울 부동산 이야기(5·6월)</p>
+      <p class="ln"><span class="chip">도서</span>『의사에게 살해당하지 않는 방법』(곤도 마코토), 『위대한 치킨의 탄생』, 『지름길은 없다』, 『돈은 빅테크로 흐른다』(애덤 시셀)</p></div></div>
+<div class="m" id="m2025-07"><h3>7월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>리스·사용권자산과 ROIC, 산업재 유통 사업 모델 — 지점을 줄이고 고객사 공장에 자판기·재고관리를 상주시키는 온사이트 공급(25.7.18), 니치 시장의 항공 부품 제조 기업, 호텔업<span class="dates">25.7.3 / 25.7.11 / 25.7.18 / 25.7.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>반복매출 사업과 사모펀드 구조, 스트리밍·격투 스포츠 콘텐츠, 공조 산업 설명</p>
+      <p class="ln"><span class="chip">도서</span>『삼국지』, 『돈의 심리학』(모건 하우절)</p></div></div>
+<div class="m" id="m2025-08"><h3>8월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>콘퍼런스콜로 자원배분 읽기, 고정비가 큰 정기 방문 서비스(유니폼 대여·폐기물 수거·해충 방제) 구조, 주가가 움직일 때 사업 숫자부터 다시 보는 법, 금융업 부채의 만기구조(듀레이션)·상업은행·생명보험·손해보험(25.8.9)<span class="dates">25.8.9 / 25.8.15 / 25.8.21 / 25.8.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>위험조정수익률의 개념, 비만약 시장의 경쟁 구도 설명, 코어 운동과 체력</p>
+      <p class="ln"><span class="chip">도서</span>『퀄리티 투자: 증명의 기록』(테리 스미스), 『월마트, 두려움 없는 도전』(샘 월튼)</p></div></div>
+<div class="m" id="m2025-09"><h3>9월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>해충 방제업 — 교차 판매, 오가닉 성장, 운전자본, 인수 시너지, 업종마다 시장의 관심이 돌고 도는 이유, 설계 전문 반도체 칩(팹리스)과 직접 생산 제조업의 자본 집약도·현금흐름 전환율 비교(25.9.21)<span class="dates">25.9.6 / 25.9.11 / 25.9.21 / 25.9.26</span></p>
+      <p class="ln"><span class="chip">오디오북</span>AI가 사업모델에 미치는 영향, 영상 스트리밍과 스포츠 이벤트·엔터테인먼트 사업, 환율과 보고 실적의 관계</p>
+      <p class="ln"><span class="chip">도서</span>『레인보우 맨션』(애슐리 반스), 『실패를 통과하는 일』(박소령), 『투자, 진화를 만나다』(풀락 프라사드)</p></div></div>
+<div class="m" id="m2025-10"><h3>10월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>명품 자동차 CMD, 원자력 발전 산업 — 매출 없는 연구개발 단계 기업의 재무제표 읽기(손익계산서에 R&amp;D·판관비만 있는 구조, 영업적자와 유상증자), 양자컴퓨터 등 초기 기술 기업에도 같은 방식 적용(25.10.17), 해충 방제업의 업계 통합, 반도체 칩(팹리스) — 매출채권과 재고자산 10년 추이로 보는 업황(25.11.21)<span class="dates">25.10.11 / 25.10.17 / 25.10.25 / 25.11.21</span></p>
+      <p class="ln"><span class="chip">오디오북</span>부동산 정책 풀이, 자기 자본 기준으로 수익률 계산해 보기, 모빌리티 운동</p></div></div>
+<div class="m" id="m2025-12"><h3>12월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>인수가 마진에 미치는 원리, 생명보험과 손해보험의 사업·금리 환경(25.12.4), 보험 브로커 사업모델, 리스크 인수와 중개, 캣본드 구조, 듀레이션(25.12.19)<span class="dates">25.12.4 / 25.12.13 / 25.12.19 / 25.12.28</span></p>
+      <p class="ln"><span class="chip">오디오북</span>음원 스트리밍 기업의 콘퍼런스콜 읽기, 반도체 칩 기업 창업자 이야기와 『호암자전』 소개, 조달 구조 설명</p>
+      <p class="ln"><span class="chip">도서</span>『생각하는 기계』(스티븐 위트), 『호암자전』(이병철), 『애플 인 차이나』</p></div></div>
+</div>
+</section>
+<section class="block year" id="y2026">
+<h2 class="yr"><span>2026년</span></h2>
+<p class="intro">보험·재보험을 이어서 다룬 뒤 지분 투자 회계(지분법·연결)와 투자회사형 지주사의 110년 자원배분을 다뤘습니다.</p>
+<div class="months">
+<div class="m" id="m2026-01"><h3>1월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">4회</span>산업 순환과 자원배분 사례, 보험 브로커와 재보험 구조, 퇴직연금·OCIO 제도 설명<span class="dates">26.1.10 / 26.1.18 / 26.1.25 / 26.1.30</span></p>
+      <p class="ln"><span class="chip">오디오북</span>자본 조달 구조와 격자 모형, 창고형 유통·디지털 금융·반도체 검사장비 산업의 사업 구조 설명</p>
+      <p class="ln"><span class="chip">도서</span>『천 원을 경영하라』(박정부, 다이소 창업자), 『도시의 승리』, 『직업의 지리학』</p></div></div>
+<div class="m" id="m2026-02"><h3>2월</h3><div class="lines"><p class="ln"><span class="chip">오디오북</span>은행·보험사의 듀레이션 개념, AI가 바꾸는 지식 서비스 업종</p></div></div>
+<div class="m" id="m2026-03"><h3>3월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">2회</span>지분 투자 회계(FVPL·FVOCI·지분법·연결), 투자회사형 지주사의 구조<span class="dates">26.3.26 / 26.3.27</span></p></div></div>
+<div class="m" id="m2026-08"><h3>8월</h3><div class="lines"><p class="ln"><span class="chip">오디오북</span>젊은 세대와 빚의 무게, 세제 개편, 금리와 AI 관련 자금 조달 구조</p>
+      <p class="ln"><span class="chip">도서</span>『직업의 지리학』, 『도시는 왜 승리하는가』, 『소년과 두더지와 여우와 말』(찰리 매커시), 『빈센트 반 고흐, 영혼의 그림과 편지들』, 『이중섭 편지와 그림들』, 『존경받는 기업, 발렌베리가의 신화』</p></div></div>
+<div class="m" id="m2026-09"><h3>9월</h3><div class="lines"><p class="ln"><span class="chip">강연</span><span class="meta">2회</span>투자회사형 지주사의 110년 자원배분 — 산업 장비·전력 자동화·방산 등 보유 사업 사례<span class="dates">26.9.24</span></p>
+      <p class="ln"><span class="chip">오디오북</span>금리 변화 시기의 내수와 월세, 고객 중심 마케팅, AI 에이전트 소개</p>
+      <p class="ln"><span class="chip">도서</span>『위대한 치킨의 탄생』, 『무기가 되는 스토리』, 『팔지 않아도 팔리는 마케팅의 비밀』, 『윔피 키드가 워리어 키드로』(조코 윌링크), 『살 것인가 팔 것인가 버틸 것인가』(목대균)</p></div></div>
+<div class="m" id="m2026-10"><h3>10월</h3><div class="lines"><p class="ln"><span class="chip">오디오북</span>심천의 무인택시와 드론, 중국 집값, 『혁명의 팡파르』 소개</p>
+      <p class="ln"><span class="chip">도서</span>『혁명의 팡파르』</p></div></div>
+</div>
+</section>
+<p class="empty" id="empty" hidden>검색 결과가 없습니다.</p>
+<section class="block guide" id="guide">
+<h2 class="sec"><span>이 목차를 보는 법</span></h2>
+<ul>
+    <li>달마다 두세 줄입니다. <span class="chip">강연</span>은 줌 재무회계 강연(회차 수와 그 달 주제), <span class="chip">오디오북</span>은 텔레그램 오디오북(그 달 주제), <span class="chip">도서</span>는 그 달 오디오북에서 내용을 풀어 소개한 책입니다. 이름만 스친 책은 넣지 않았고, 창업자 책은 소개한 달마다 적었습니다. 검색창에 책 제목을 넣으면 그 달로 바로 갑니다.</li>
+    <li>녹음이 남아 있는 달만 실었습니다. 표에 없는 달은 올릴 녹음이 없다는 뜻입니다.</li>
+    <li>내용은 녹음을 받아적어 정리했습니다. 회사·업종 이름과 숫자에는 받아적기 오류가 있을 수 있습니다.</li>
+    <li>이 강연은 AI가 본격적으로 쓰이기 전인 2023년에 시작했습니다. 그 사이 금리와 AI로 사업 환경이 많이 달라졌습니다. 각 회차에서 다룬 회사의 사정은 그때 기준이니, 달라진 환경을 감안해서 시청하시기 바랍니다. 사업과 숫자를 읽는 방법은 지금도 그대로 쓰실 수 있습니다.</li>
+    <li>이 자료는 사업모델 설명, 산업 설명, 회계 기초, 책 소개를 담은 교육용 목차입니다. 특정 종목이나 금융상품에 대한 추천·평가·매매 판단이 아니며, 언급된 산업과 회사는 사업과 재무제표를 읽는 법을 설명하기 위한 사례입니다. 투자 판단과 그 결과는 본인의 몫입니다.</li>
+  </ul>
+</section>
+<footer class="note"><p>2026년 10월 강연은 아직 열리지 않았습니다. 이 문서는 수강생 여러분이 필요한 때 필요한 회차를 바로 찾으시도록 만든 자료입니다.</p></footer>
+</main>
+<script>
+(function(){
+  var q=document.getElementById('q'), qx=document.getElementById('qx'), empty=document.getElementById('empty');
+  var bar=document.querySelector('.bar');
+  function setBarH(){try{document.documentElement.style.setProperty('--bar-h',bar.offsetHeight+'px');}catch(e){}}
+  setBarH(); window.addEventListener('resize',setBarH);
+  var rows=[].slice.call(document.querySelectorAll('.m, .f'));
+  var orig=rows.map(function(r){return r.innerHTML;});
+  var texts=rows.map(function(r){return r.textContent.replace(/\s+/g,' ').toLowerCase();});
+  var secs=[].slice.call(document.querySelectorAll('section.year, section.find'));
+  function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+  function mark(el,re){
+    var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null), ns=[], n;
+    while((n=w.nextNode())) ns.push(n);
+    ns.forEach(function(t){
+      if(!re.test(t.nodeValue)) return; re.lastIndex=0;
+      var f=document.createDocumentFragment(), last=0, m, v=t.nodeValue;
+      while((m=re.exec(v))){ if(!m[0]) break;
+        f.appendChild(document.createTextNode(v.slice(last,m.index)));
+        var k=document.createElement('mark'); k.textContent=m[0]; f.appendChild(k); last=m.index+m[0].length; }
+      f.appendChild(document.createTextNode(v.slice(last))); t.parentNode.replaceChild(f,t); re.lastIndex=0;
+    });
+  }
+  function run(){
+    var raw=q.value.trim(), v=raw.replace(/\s+/g,' ').toLowerCase();
+    qx.hidden=!raw; document.body.classList.toggle('searching',!!v);
+    var re=v?new RegExp(esc(raw.replace(/\s+/g,' ')),'gi'):null, hits=0;
+    rows.forEach(function(r,i){
+      r.innerHTML=orig[i];
+      var on=!v||texts[i].indexOf(v)!==-1; r.hidden=!on;
+      if(v&&on){hits++; mark(r,re);}
+    });
+    secs.forEach(function(s){ s.hidden=!!v && !s.querySelector('.m:not([hidden]), .f:not([hidden])'); });
+    empty.hidden=!(v&&hits===0);
+  }
+  q.addEventListener('input',run);
+  qx.addEventListener('click',function(){q.value='';run();q.focus();});
+  q.addEventListener('keydown',function(e){if(e.key==='Escape'){q.value='';run();}});
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(a&&q.value){q.value='';run();}
+  },true);
+})();
+
+</script>
+
+</body></html>
